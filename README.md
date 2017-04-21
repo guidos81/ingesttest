@@ -1,6 +1,6 @@
 This project is built on the Slim Framework, details to install it are below.
 
-#How to Install Slim
+# How to Install Slim
 
 We recommend you install Slim with Composer. Navigate into your project’s root directory and execute the bash command shown below. This command downloads the Slim Framework and its third-party dependencies into your project’s vendor/ directory.
 
