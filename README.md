@@ -1,5 +1,13 @@
 This project is built on the Slim Framework, details to install it are below.
 
+#How to Install Slim
+
+We recommend you install Slim with Composer. Navigate into your project’s root directory and execute the bash command shown below. This command downloads the Slim Framework and its third-party dependencies into your project’s vendor/ directory.
+
+    composer require slim/slim "^3.0"
+
+You can then follow the instructions below to set up a new project
+
 # Slim Framework 3 Skeleton Application
 
 Use this skeleton application to quickly setup and start working on a new Slim Framework 3 application. This application uses the latest Slim 3 with the PHP-View template renderer. It also uses the Monolog logger.
