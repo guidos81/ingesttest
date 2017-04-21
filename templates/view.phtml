@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Todo View</title>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div>
+	        <div class="pure-g">
+	            <div class="pure-u-1 pure-g">
+	                <h1>Todo View</h1>
+	            </div>
+                <div class="pure-u-1 pure-g">
+                    <h1>Incomplete</h1>
+                </div>
+            </div>
+            <div>
+                <table class="pure-table pure-table-striped">
+                    <thead>
+                        <tr>
+                            <th>UserId</th>
+                            <th>Id</th>
+                            <th>Title</th>
+                            <th>Completed</th>
+                            <th>Warning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <?php
+                    $break = 0;
+                    foreach ($result as $res) {
+                        if ($res['completed']) {
+                            $break++;
+                            if ($break == 1) {
+                    ?>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pure-g">
+                <div class="pure-u-1 pure-g">
+                    <h1>Complete</h1>
+                </div>
+            </div>
+            <div>
+                <table class="pure-table pure-table-striped">
+                    <thead>
+                        <tr>
+                            <th>UserId</th>
+                            <th>Id</th>
+                            <th>Title</th>
+                            <th>Completed</th>
+                            <th>Warning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <?php
+                            }
+                        }
+                    ?>
+                    <tr>
+                        <td><?= $res['userId'] ?></td>
+                        <td><?= $res['id'] ?></td>
+                        <td><?= $res['title'] ?></td>
+                        <td><?= $res['completed'] ?></td>
+                        <td><?= $res['warning'] ?></td>
+                    </tr>
+                    <?php
+                    }
+                    ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
