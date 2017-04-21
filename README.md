@@ -29,7 +29,7 @@ That's it! Now go build something cool.
 
 # Further installation instructions from Guy Taylor
 
-Once the framework is installed you'll need to add the project newly created project folder to git and link it to my repository: https://github.com/guidos81/ingesttest
+Once the framework is installed you'll need to add the newly created project folder to git and link it to my repository: https://github.com/guidos81/ingesttest
 
 Once you're all synced up you should gain a classes directory, extra templates and a few other changes in /src. 
 
